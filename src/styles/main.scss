@@ -254,19 +254,12 @@ button {
             width: 100%;
         }
 
-        & .tabs__cities {                
+        & .offices__cities {                
             display: none;
 
             &--active {
                 display: block;
             }
-        }
-    }
-
-    &__map {
-        & img{
-            display: block;
-            width: 100%;
         }
     }
 }

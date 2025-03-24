@@ -24,7 +24,7 @@ const swiper = new Swiper('.swiper', {
 
 //tabs
 const tabsBtns = document.querySelectorAll('.tabs__btn');
-const tabsCities = document.querySelectorAll('.tabs__cities');
+const tabsCities = document.querySelectorAll('.offices__cities');
 
 tabsBtns.forEach((btnItem) => {
     btnItem.addEventListener('click',(event) => {
@@ -36,9 +36,9 @@ tabsBtns.forEach((btnItem) => {
 
         const path = event.currentTarget.dataset.path;
         tabsCities.forEach((citiesItem) => {
-            citiesItem.classList.remove('tabs__cities--active');
+            citiesItem.classList.remove('offices__cities--active');
         });
-        document.querySelector(`[data-target="${path}"]`).classList.add('tabs__cities--active');
+        document.querySelector(`[data-target="${path}"]`).classList.add('offices__cities--active');
     });
 });
 
@@ -49,7 +49,7 @@ const dropdownContent = document.querySelector('.dropdown__content');
 const drodownBtn = document.querySelector('.dropdown__button');
 const overlay = document.querySelector('.offices__overlay');
 
-// функция переключение cстилей при открытом/закрытом dropdown 
+// функция переключение cтилей при открытом/закрытом dropdown 
 const toggleModal = () => {
     dropdownContent.classList.toggle('dropdown__content--active');
     drodownBtn.classList.toggle('dropdown__button--active');
