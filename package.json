@@ -1,0 +1,26 @@
+{
+    "name": "peach",
+    "scripts": {
+        "build": "webpack",
+        "dev": "webpack serve --env develop"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.10",
+        "@babel/preset-env": "^7.26.9",
+        "babel-loader": "^10.0.0",
+        "css-loader": "^6.11.0",
+        "html-loader": "^3.1.2",
+        "html-webpack-plugin": "^5.6.3",
+        "mini-css-extract-plugin": "^2.5.2",
+        "sass": "^1.86.0",
+        "sass-loader": "^12.6.0",
+        "style-loader": "^3.3.4",
+        "webpack": "^5.98.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.15.2"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1",
+        "swiper": "^11.2.6"
+    }
+}

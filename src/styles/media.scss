@@ -1,0 +1,280 @@
+@import 'variables.scss';
+
+@media (max-width: $breakpoint_desktop) {
+    .container {
+            padding-left: 30px;
+            padding-right: 30px;
+    }
+
+    .offices {
+        height: auto;
+
+        &__header {            
+            padding-left: 30px;
+            padding-right: 30px;
+
+            & .dropdown__content {
+                width: auto;
+                left: 30px;
+                right: 30px;
+            }
+        }
+
+        &__tabs .tabs {
+            &__list {
+                gap: 20px;
+            }
+        }
+    }
+
+    .bonuses,
+    .mission {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: $breakpoint_tablet) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        &__nav .nav {
+            &__list {
+                gap: 10px;
+            }
+
+            &__item {
+                font-size: 16px;
+            }
+        } 
+    }      
+
+    .hero {
+        padding-top: 27px;
+        padding-bottom: 50px; 
+    }
+
+    .offices {
+        margin-bottom: 50px;  
+
+        &__header {
+            padding-left: 15px;
+            padding-right: 15px;             
+            
+            & .dropdown {
+                &__button {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__tabs .tabs{
+            &__list {
+               gap: 10px; 
+            }
+
+            &__btn {
+                font-size: 16px;
+            }
+        }
+
+        &__main {
+            padding-top: 30px;
+        }
+    }
+
+    .bonuses,
+    .mission {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .mission {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        height: auto;
+    }
+}
+
+@media (max-width: $breakpoint_mobile) {
+    .header {        
+        width: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        height: auto;
+        padding: 16px 5px;
+
+        &__nav .nav {
+            &__list {
+                flex-wrap: wrap;
+            }
+        }
+    }   
+
+    .hero {
+        align-items: flex-start;
+
+        &__title {
+            margin-bottom: 10px;
+            font-size: 28px; 
+        }
+
+        &__description {
+            text-align: left ;
+            font-size: 16px;
+        }
+    }
+
+    .offices {
+        &__header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 16px 5px 21px 5px;
+            height: auto;
+            width: auto;
+        }
+
+        &__tabs .tabs__btn {
+            font-size: 14px;
+
+            &--active::after {
+                bottom: -22px;
+            }
+        }
+    }
+
+    .mission {
+        padding: 32px 5px;
+
+        &__title {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        &__descrioption {
+            font-size: 16px;
+        }
+    }
+
+    .businesses {
+        padding-top: 50px;
+
+        &__title {
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__card {
+            
+
+            .card {
+                &__content {
+                    height: 60px;
+                    gap: 10px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+                &__title {
+                    font-size: 20px;
+                }
+
+                &__description {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .bonuses {
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 24px 5px;
+
+        &__title {
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        &__list {
+            gap: 10px;
+            flex-wrap: wrap;
+            padding-bottom: 24px;
+        }
+
+        &__item {
+            width: 120px;
+        }
+
+        &__icon {
+            height: 80px;
+            width: 80px;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+
+        & .motivation {
+            padding-top: 24px;
+
+            &__title,
+            &__subtitle {
+                font-size: 22px;
+            }
+
+            &__subtitle {
+                margin-bottom: 25px;
+            }
+
+            &__list {
+                gap: 10px;
+                flex-wrap: wrap;
+                padding-bottom: 24px;
+            }
+    
+            &__item {
+                width: 120px;
+            }
+    
+            &__icon {
+                height: 80px;
+                width: 80px;
+            }
+    
+            &__description {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .teambuilding {
+        &__title {
+            margin-bottom: 15px;
+            font-size: 28px; 
+        }
+
+        &__header {
+            & .swiper-button-next,
+            & .swiper-button-prev {
+                display: none;
+            }
+        }
+
+        & .swiper-pagination {
+            display: none;
+        }
+    }
+}
