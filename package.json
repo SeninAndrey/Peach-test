@@ -1,5 +1,6 @@
 {
     "name": "peach",
+    "homepage": "https://github.com/SeninAndrey/Peach-test",
     "scripts": {
         "build": "webpack",
         "dev": "webpack serve --env develop"
@@ -20,6 +21,7 @@
         "webpack-dev-server": "^4.15.2"
     },
     "dependencies": {
+        "gh-pages": "^6.3.0",
         "normalize.css": "^8.0.1",
         "swiper": "^11.2.6"
     }
