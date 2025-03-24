@@ -68,6 +68,26 @@
                 &__button {
                     font-size: 20px;
                 }
+
+                &__content {
+                    left: 15px;
+                    right: 15px;
+                    padding: 20px;
+                }
+
+                &__list {
+                    gap: 10px;
+                }
+
+                &__item {
+                    font-size: 16px;
+
+                    & .region {
+                        &__title {
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
 
@@ -139,6 +159,29 @@
             padding: 16px 5px 21px 5px;
             height: auto;
             width: auto;
+
+            & .dropdown {
+               
+                &__content {         
+                    height: auto;          
+                    padding: 15px;
+                }
+
+                &__list {
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                }
+
+                &__item {
+                    font-size: 14px;
+
+                    & .region {
+                        &__title {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
         }
 
         &__tabs .tabs__btn {
