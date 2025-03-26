@@ -2,8 +2,8 @@
 
 @media (max-width: $breakpoint_desktop) {
     .container {
-            padding-left: 30px;
-            padding-right: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .offices {
@@ -47,7 +47,7 @@
             }
 
             &__item {
-                font-size: 16px;
+                font-size: 14px;
             }
         } 
     }      
@@ -115,7 +115,7 @@
     .mission {
         padding-top: 32px;
         padding-bottom: 32px;
-        height: auto;
+        height: auto;        
     }
 }
 
@@ -126,19 +126,22 @@
         margin-right: 15px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
+        gap: 14px;
         height: auto;
         padding: 16px 5px;
 
         &__nav .nav {
             &__list {
                 flex-wrap: wrap;
+                gap: 4px 10px;
             }
         }
     }   
 
     .hero {
         align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
 
         &__title {
             margin-bottom: 10px;
@@ -146,9 +149,34 @@
         }
 
         &__description {
-            text-align: left ;
+            margin-bottom: 46px;
+            text-align: left;
             font-size: 16px;
+            line-height: 118%;
         }
+
+        &__achievements {
+            gap: 20px 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 7px;
+            padding-right: 7px;
+
+            & .achievements{     
+                &__item {
+                    max-width: 180px;
+                }
+        
+                &__value {
+                    margin-bottom: 2px;
+                    font-size: 40px;
+                }
+        
+                &__description {
+                    font-size: 16px;
+                }
+            }
+        } 
     }
 
     .offices {
@@ -160,8 +188,7 @@
             height: auto;
             width: auto;
 
-            & .dropdown {
-               
+            & .dropdown {               
                 &__content {         
                     height: auto;          
                     padding: 15px;
@@ -169,7 +196,7 @@
 
                 &__list {
                     justify-content: flex-start;
-                    flex-wrap: wrap;
+                    flex-wrap: wrap;                    
                 }
 
                 &__item {
@@ -184,17 +211,30 @@
             }
         }
 
-        &__tabs .tabs__btn {
-            font-size: 14px;
-
-            &--active::after {
-                bottom: -22px;
-            }
+        &__main {
+            padding: 0;
         }
+        
+        &__tabs .tabs {
+            &__list {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap:30px 10px
+            }
+
+            &__btn {
+                font-size: 14px;
+    
+                &--active::after {
+                    bottom: -22px;
+                }
+            }
+        }  
     }
 
     .mission {
         padding: 32px 5px;
+        background-image: url(../images/Left-pattern-mobile.svg), url(../images/Right-pattern-mobile.svg);
 
         &__title {
             margin-bottom: 10px;
@@ -203,14 +243,17 @@
 
         &__descrioption {
             font-size: 16px;
+            line-height: 130%;
         }
     }
 
     .businesses {
         padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
 
         &__title {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-size: 28px;
         }
 
@@ -219,8 +262,6 @@
         }
 
         &__card {
-            
-
             .card {
                 &__content {
                     height: 60px;
@@ -243,18 +284,18 @@
     .bonuses {
         height: auto;
         margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 24px 5px;
+        margin-bottom: 48px;
+        padding: 21px 5px;
 
         &__title {
-            margin-bottom: 40px;
+            margin-bottom: 37px;
             font-size: 28px;
         }
 
         &__list {
-            gap: 10px;
+            gap: 27px 10px;
             flex-wrap: wrap;
-            padding-bottom: 24px;
+            padding-bottom: 21px;
         }
 
         &__item {
@@ -264,6 +305,11 @@
         &__icon {
             height: 80px;
             width: 80px;
+
+            & svg {
+                width: 38px;
+                height: 38px;
+            }
         }
 
         &__description {
@@ -272,6 +318,7 @@
 
         & .motivation {
             padding-top: 24px;
+            text-align: center;
 
             &__title,
             &__subtitle {
@@ -279,22 +326,27 @@
             }
 
             &__subtitle {
-                margin-bottom: 25px;
+                margin-bottom: 23px;
             }
 
             &__list {
-                gap: 10px;
-                flex-wrap: wrap;
-                padding-bottom: 24px;
+                gap: 25px;
+                flex-wrap: wrap;                
+                padding-bottom: 4px;
             }
     
             &__item {
-                width: 120px;
+                width: 80px;
             }
     
             &__icon {
                 height: 80px;
                 width: 80px;
+                
+                & svg {
+                    width: 38px;
+                    height: 38px;
+                }
             }
     
             &__description {
@@ -304,8 +356,10 @@
     }
 
     .teambuilding {
+        padding: 0 20px 50px 20px;
+
         &__title {
-            margin-bottom: 15px;
+            margin-bottom: 12px;            
             font-size: 28px; 
         }
 
@@ -314,6 +368,10 @@
             & .swiper-button-prev {
                 display: none;
             }
+        }
+
+        & .swiper {
+            margin-bottom: 0;
         }
 
         & .swiper-pagination {
